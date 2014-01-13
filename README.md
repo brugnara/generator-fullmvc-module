@@ -1,4 +1,10 @@
-yo configurator-component
+# Install
+
+    npm install -g git+ssh://git@gitlab:generators/configurator-component.git
+
+# Usage
+
+    yo configurator-component
 
 Seguire gli steps.
 
