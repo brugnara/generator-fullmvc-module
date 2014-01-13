@@ -1,7 +1,7 @@
 define ['app'], (app) ->
   'use strict'
 
-  app.controller '<%= _.capitalize(name) %>MainCtrl', ($http, $scope, Restangular) ->
+  app.register.controller '<%= _.capitalize(name) %>MainCtrl', ($http, $scope, Restangular) ->
     # $scope.
     delete $http.defaults.headers.common["X-Requested-With"]
 
@@ -12,4 +12,3 @@ define ['app'], (app) ->
         $scope.p = parameters.<%= name %>;
       , (err) ->
         console.log "ERROR: " + JSON.stringify err
-
