@@ -40,7 +40,7 @@ ConfiguratorComponentGenerator.prototype.app = function app() {
   this.mkdir(this.name + '/views');
 
   this.template('skeleton/bootstrap.coffee',        this.name + '/bootstrap.coffee');
-  this.template('skeleton/_gitignore',              this.name + '/.gitignore');
+  this.template('skeleton/tmp.gitignore',              this.name + '/.gitignore');
   this.template('skeleton/controllers/main.coffee', this.name + '/controllers/main.coffee');
   this.template('skeleton/views/main.html',         this.name + '/views/main.html');
 };
