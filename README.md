@@ -1,11 +1,12 @@
 # Install
 
-    npm install -g git+ssh://git@gitlab:generators/configurator-component.git
+    npm install -g git@github.com:brugnara/generator-fullmvc-module.git
 
 # Usage
 
-    yo configurator-component
+    yo fullmvc-module
 
-Seguire gli steps.
+Follow steps.
 
-Lanciare il comando, nella cartella /modules del container. Una volta creato il componente, andrà aggiunto al repositori git.
+You have to use this generator in the /app/modules/ folder of a "fullmvc" application.
+See generator-fullmvc repo for more info.
