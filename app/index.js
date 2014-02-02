@@ -24,7 +24,7 @@ ConfiguratorComponentGenerator.prototype.askFor = function askFor() {
 
   var prompts = [{
     name: 'name',
-    message: 'Come si chiama questo configuratore? Es: tmagent, home, network'
+    message: 'Enter a name for this module: (ie: chat, forum..)'
   }];
 
   this.prompt(prompts, function (props) {
@@ -40,7 +40,7 @@ ConfiguratorComponentGenerator.prototype.app = function app() {
   this.mkdir(this.name + '/views');
 
   this.template('skeleton/bootstrap.coffee',        this.name + '/bootstrap.coffee');
-  this.template('skeleton/tmp.gitignore',              this.name + '/.gitignore');
+  this.template('skeleton/gitignore',           this.name + '/.gitignore');
   this.template('skeleton/controllers/main.coffee', this.name + '/controllers/main.coffee');
   this.template('skeleton/views/main.html',         this.name + '/views/main.html');
 };
@@ -48,4 +48,5 @@ ConfiguratorComponentGenerator.prototype.app = function app() {
 ConfiguratorComponentGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', this.name + '/.editorconfig');
   this.copy('jshintrc', this.name + '/.jshintrc');
+  this.directory('skeleton/i18n', this.name + '/i18n');
 };
