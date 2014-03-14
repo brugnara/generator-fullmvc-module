@@ -1,6 +1,6 @@
 # Install
 
-    npm install -g git@github.com:brugnara/generator-fullmvc-module.git
+    npm install -g generator-fullmvc-module
 
 # Usage
 
